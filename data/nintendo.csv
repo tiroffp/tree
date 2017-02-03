@@ -1,0 +1,16 @@
+name,degree,graduationYear,phone,role,nonHuskyEmail,big,class,family,character
+Phil Giordano,Architecture,2013,(631) 428-7587,34,philgiordano1@gmail.com,,Founding Father,Nintendo,Yoshi
+Andrew Realmuto,Finance /Accounting,2013,(908) 313-1703,41,arealmuto@gmail.com,,Founding Father,Nintendo,Wario
+Yanni Louloudis,Finance/Accounting,2013,(203) 520-4399,47,louloudis.y@gmail.com,,Alpha Class,Nintendo,Waluigi
+Andrew Cutting,Marketing,2012,(703) 593-4241,65,awilcutting@gmail.com,Andrew Realmuto,Gamma class,Nintendo,Starfox
+Joe Tarantino,Accounting,2013,(631) 742-3497,71,jtarantino90@gmail.com,Andrew Cutting,Delta class,Nintendo,Link
+Mike Duffy,Engineering,2014,(617) 378-5222,74,duffyx7@yahoo.com,Phil Giordano,Delta class,Nintendo,Mario
+Vin Trapani,Finance/Economics,2015,(631) 742-3457,82,vintrapani@gmail.com,Yanni Louloudis,Epsilon class,Nintendo,Luigi
+Chris Villari,Finance/Accounting,2015,(631) 707-4470,83,cvillari14@gmail.com,Andrew Realmuto,Zeta class,Nintendo,Bowser
+Phil Van Pelt,Physical Therapy,2016,(908) 868-9180,89,pvanpelt25@gmail.com,Mike Duffy,Zeta class,Nintendo,Toad
+Ryan Jacobs,Finance / Mktg,2017,(201) 320-1235,95,Rtjacobs9@gmail.com,Phil Van Pelt,Eta class,Nintendo,Falco
+Nicholas Salazar,Int'l Business,2018,(918) 855-4154,134,nick24or@aol.com,Ryan Jacobs,Lambda class,Nintendo,Link
+Adam Bechtold,Mechanical Eng.,2019,(203) 494-8520,139,adamcbechtold@gmail.com,Ryan Jacobs,Mu class,Nintendo,
+Peyton Tiroff,Computer Science,2019,(860) 918-6790,145,Tiroffp@gmail.com,Phil Van Pelt,Mu class,Nintendo,
+James 'JD' Lister,Bioengineering,2019,(314) 750-6515,164,JD.lister@sbcglobal.net,Peyton Tiroff,Nu class,Nintendo,
+Matt O'Brien,[Major],[year],(302) 750-5993,[Roll Number],[non-husky email],Vin Trapani,,Nintendo,[character]

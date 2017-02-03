@@ -1,0 +1,20 @@
+name,degree,year,phone,Role,email,Big,Class,Family,character
+Ben Hollander,Mech. Engineering,2013,(508) 904-8065,46,hollander.ben@gmail.com,,Founding Father,Knights,Sir Galahad
+Oleg Vaskevich,Comp. Engineering,2016,(508) 353-1505,88,oleg@osv.im,Ben Hollander,Zeta class,Knights,Sir Percival
+Sean Maloney,Political Science,2013,[No phone],24,[No email],,Founding Father,Knights,King Aruthur
+Steve Deck,Finance,2013,(256) 664-4471,68,steved34@gmail.com,Sean Maloney,Delta Class,Knights,Sir Gawain
+Joel Crozier,Chemical Eng.,2017,(567) 686-2822,93,joeldcrozier@gmail.com,Steve Deck,Zeta class,Knights,Sir Lucan
+Kyle Wolkwitz,Industrial Eng.,2017,(732) 664-2554,101,Email,Joel Crozier,Eta class,Knights,
+Sam Levine,Mechanical Eng.,2017,(617) 448-2650,123,Saml3777@gmail.com,Kyle Wolkwitz,Kappa class,Knights,
+Sean Weir (Disaffiliated),,,,,,Sam Levine,,Knights,
+Tyler Wong,Civil Eng.,2016,(808) 375-0309,122,ty_k_wong@hotmail.com,Joel Crozier,Kappa class,Knights,
+Michael Mendez,Media / Screen Studies,2019,(512) 736-7826,138,M.d.mendez1996@gmail.com,Tyler Wong,Lambda class,Knights,
+Kevin Goldthwaite,Physical Therapy,2014,(860) 930-2730,52,[no email],Sean Maloney,Beta class,Knights,Sir Lancelot
+Jordan Metcalf,Physical Therapy,2018,(708) 334-6782,92,s.jordi93@gmail.com,Kevin Goldthwaite,Zeta class,Knights,Sir Gareth
+Ant DeMayo,Civil Eng.,2018,(203) 615-2066,110,ademayo123@gmail.com,Jordan Metcalf,Theta class,Knights,Sir Dagonet
+Scott Louis,Physical Therapy,2020,(914) 907-7296,130,Scotttlouis@aol.com,Ant Demayo,Lambda class,Knights,Constantine III
+Daniel Allen,Finance / Poly Sci.,2019,(978) 305-8215,141,allendanielpatrick@gmail.com,Scott Louis,Mu class,Knights,
+David Rans,Undeclared,2021,6173313599,168,Davidrans1998@gmail.com,Daniel Allen,Xi Class,Knights,
+Rayshawn Hughes,Games,2021,(862) 588-2309,166,shughes1097@gmail.com,Scott Louis,Xi Class,Knights,
+Ian Sutherland,Poly Sci. / Comm.,2017,(862) 354-7203,155,ian@sudsbox.com,Ant Demayo,Nu class,Knights,
+Arthur Doelp,Business / Entr.,2018,(203) 803-8820,160,arthurdoelp@gmail.com,Jordan Metcalf,Nu class,Knights,

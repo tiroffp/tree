@@ -1,0 +1,23 @@
+name,degree,graduationYear,phone,roleNumber,nonHuskyEmail,big,class,family,character
+Joe Sincerny,Business,2012,(401) 556-5967,14,No Email,,Founding Father,Avengers,Juggarnaught
+Tom Abraham,Mech. Engineering,2013,(860) 960-8600,21,thomas.mark.abraham@gmail,,Founding Father,Avengers,Iron Man
+Craig Cady,Accounting,2013,(609) 516-8194,23,cmc77x@aol.com,,Founding Father,Avengers,Nightcrawler
+Mark Bylancik,English,2015,(973) 985-4234,56,mbylancik@gmail.com,Tom Abraham,Beta Class,Avengers, C. America
+Dan Harcourt,Music Industry,2015,(774) 280-6188,62,danieljharcourt@gmail.com,Joe Sincerny,Gamma class,Avengers,Loki
+Matt Schmidt,Pharmacy,2015,(508) 450-4249,70,mjschmidt21@gmail.com,Craig Cady,Delta class,Avengers,Wolverine
+Alex Chancellor,Chemistry,2015,(831) 277-0509,77,acc_tennis@yahoo.com,Mark Bylancik,Delta class,Avengers,War Machine
+James Simpson,Mechanical Eng.,2017,(508) 523-2708,91,js2194@gmail.com,Matt Schmidt,Zeta class,Avengers,Ice Man
+Will Johnson,Electrical / Computer Eng.,2017,(603) 762-5604,96,soccrplayr11@gmail.com,Tom Abraham,Eta class,Avengers,Hawkeye
+Daniel Croitoru,Mechanical Eng.,2018,(954) 326-5934,105,croitoru.d@gmail.com,James Simpson,Theta class,Avengers,Cyclops
+Will Lake,Bioengineering,2019,(925) 255-3321,121,Wlake1996@gmail.com,Will Johnson,Lambda class,Avengers,Thor
+Brian Wolek,Mechanical Eng.,2019,(203) 815-8362,124,Brian.wolek@gmail.com,Daniel Croitoru,Kappa class,Avengers,Beast
+William Cisneros,Bioengineering,2019,(801) 652-2810,144,wjcisneros@gmail.com,Brian Wolek,Mu class,Avengers,Havoc
+Andrew Smith,Computer Eng.,2018,(978) 884-6592,150,andrewsmiththefirst@gmail,Daniel Croitoru,Mu class,Avengers,Magneto
+Cameron Corriveau,Mktg. / Mgmt.,2019,(603) 268-1714,151,cam.corriveau@gmail.com,Henry Poulin,Nu class,Avengers,Gambit
+Austin Roth-Eagle,Communications,2019,(443) 798-0209,157,areagle9@gmail.com,Will Lake,Nu class,Avengers,
+Kyle Dolce,Computer Science,2021,5083617001,167,Kmdolce15@gmail.com,Will Johnson,Xi Class,Avengers,
+Justin,,,,170,,William Cisneros,Xi Class,Avengers,
+Max Lacoma,Mechanical Engineering/Music,2021,3472875094,175,lacomamax@gmail.com,Cameron Corriveau,Xi Class,Avengers,
+Tyler Wu,Computer Science and Business Administration,2020,9082474888,176,tyler_wu1211@yahoo.com,Austin Roth-Eagle,Xi Class,Avengers,
+Jarret Elser,Chemical Eng.,2020,(609) 802-4696,,jarettelser@gmail.com,Andrew Smith,Nu class,Avengers,
+Henry Poulin,Bioengineering,2019,(617) 909-8038,,,James Simpson,Mu class,Avengers,Colossus
