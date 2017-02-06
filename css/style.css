@@ -23,3 +23,8 @@ svg {
   stroke: #ccc;
   stroke-width: 1.5px;
 }
+
+.name {
+  font-size: 24px;
+  font-weight: 400;
+}

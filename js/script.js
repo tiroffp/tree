@@ -1,7 +1,7 @@
-// from https://github.com/justincy/d3-pedigree-examples
+``// from https://github.com/justincy/d3-pedigree-examples
 var data;
-var boxWidth = 150,
-    boxHeight = 40;
+var boxWidth = 300,
+    boxHeight = 100;
 
 // Setup zoom and pan
 var zoom = d3.behavior.zoom()
@@ -29,7 +29,7 @@ var tree = d3.layout.tree()
   // the size parameter instead then d3 would
   // calculate the separation dynamically to fill
   // the available space.
-  .nodeSize([100, 200])
+  .nodeSize([boxHeight + 150, boxWidth + 150])
 
   // By default, cousins are drawn further apart than siblings.
   // By returning the same value in all cases, we draw cousins
@@ -55,7 +55,7 @@ var allbros = {"Wooglin":
                 {"name": "Wooglin",
                 "littles": [],
                 "collapsed": false,
-                "roleNumber": 0}
+                }
               }
 
 function parse(brother, index) {
@@ -127,13 +127,32 @@ function draw(){
 
   // Draw the person's name and position it inside the box
   nodeEnter.append("text")
-      .attr("dx", -(boxWidth/2) + 10)
-      .attr("dy", 0)
+      .attr("dx", function(d) {
+          if(d.image) {
+            return -(boxWidth/2) + boxHeight + 10;
+          } else {
+            return -(boxWidth/2) + 25;
+          }
+        })
+      .attr("dy", function(d) {
+          if(d.image) {
+            return -(boxHeight/2) + 25;
+          } else {
+            return 0;
+          }
+        })
       .attr("text-anchor", "start")
       .attr('class', 'name')
       .text(function(d) {
         return d.name;
       });
+
+  nodeEnter.append("image")
+      .attr("xlink:href", function(d) { return d.image; })
+      .attr("x", -(boxWidth/2) + 1)
+      .attr("y", -(boxHeight/2) + 1)
+      .attr("width", boxHeight - 2)
+      .attr("height", boxHeight - 2);
 
   // Update the position of both old and new nodes
   node.attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });

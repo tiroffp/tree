@@ -1,137 +1,137 @@
-name,degree,graduationYear,phoneNumber,roleNumber,nonHuskyEmail,big,class,family, character
-Phil Giordano,Architecture,2013,(631) 428-7587,34,philgiordano1@gmail.com,,Founding Father,Nintendo,Yoshi
-Andrew Realmuto,Finance /Accounting,2013,(908) 313-1703,41,arealmuto@gmail.com,,Founding Father,Nintendo,Wario
-Yanni Louloudis,Finance/Accounting,2013,(203) 520-4399,47,louloudis.y@gmail.com,,Alpha Class,Nintendo,Waluigi
-Andrew Cutting,Marketing,2012,(703) 593-4241,65,awilcutting@gmail.com,Andrew Realmuto,Gamma class,Nintendo,Starfox
-Joe Tarantino,Accounting,2013,(631) 742-3497,71,jtarantino90@gmail.com,Andrew Cutting,Delta class,Nintendo,Link
-Mike Duffy,Engineering,2014,(617) 378-5222,74,duffyx7@yahoo.com,Phil Giordano,Delta class,Nintendo,Mario
-Vin Trapani,Finance/Economics,2015,(631) 742-3457,82,vintrapani@gmail.com,Yanni Louloudis,Epsilon class,Nintendo,Luigi
-Chris Villari,Finance/Accounting,2015,(631) 707-4470,83,cvillari14@gmail.com,Andrew Realmuto,Zeta class,Nintendo,Bowser
-Phil Van Pelt,Physical Therapy,2016,(908) 868-9180,89,pvanpelt25@gmail.com,Mike Duffy,Zeta class,Nintendo,Toad
-Ryan Jacobs,Finance / Mktg,2017,(201) 320-1235,95,Rtjacobs9@gmail.com,Phil Van Pelt,Eta class,Nintendo,Falco
-Nicholas Salazar,Int'l Business,2018,(918) 855-4154,134,nick24or@aol.com,Ryan Jacobs,Lambda class,Nintendo,Link
-Adam Bechtold,Mechanical Eng.,2019,(203) 494-8520,139,adamcbechtold@gmail.com,Ryan Jacobs,Mu class,Nintendo,
-Peyton Tiroff,Computer Science,2019,(860) 918-6790,145,Tiroffp@gmail.com,Phil Van Pelt,Mu class,Nintendo,
-James 'JD' Lister,Bioengineering,2019,(314) 750-6515,164,JD.lister@sbcglobal.net,Peyton Tiroff,Nu class,Nintendo,
-Matt O'Brien,[Major],[year],(302) 750-5993,[Roll Number],[non-husky email],Vin Trapani,,Nintendo,[character]
-Joe Sincerny,Business,2012,(401) 556-5967,14,No Email,,Founding Father,Avengers,Juggarnaught
-Tom Abraham,Mech. Engineering,2013,(860) 960-8600,21,thomas.mark.abraham@gmail,,Founding Father,Avengers,Iron Man
-Craig Cady,Accounting,2013,(609) 516-8194,23,cmc77x@aol.com,,Founding Father,Avengers,Nightcrawler
-Mark Bylancik,English,2015,(973) 985-4234,56,mbylancik@gmail.com,Tom Abraham,Beta Class,Avengers, C. America
-Dan Harcourt,Music Industry,2015,(774) 280-6188,62,danieljharcourt@gmail.com,Joe Sincerny,Gamma class,Avengers,Loki
-Matt Schmidt,Pharmacy,2015,(508) 450-4249,70,mjschmidt21@gmail.com,Craig Cady,Delta class,Avengers,Wolverine
-Alex Chancellor,Chemistry,2015,(831) 277-0509,77,acc_tennis@yahoo.com,Mark Bylancik,Delta class,Avengers,War Machine
-James Simpson,Mechanical Eng.,2017,(508) 523-2708,91,js2194@gmail.com,Matt Schmidt,Zeta class,Avengers,Ice Man
-Will Johnson,Electrical / Computer Eng.,2017,(603) 762-5604,96,soccrplayr11@gmail.com,Tom Abraham,Eta class,Avengers,Hawkeye
-Daniel Croitoru,Mechanical Eng.,2018,(954) 326-5934,105,croitoru.d@gmail.com,James Simpson,Theta class,Avengers,Cyclops
-Will Lake,Bioengineering,2019,(925) 255-3321,121,Wlake1996@gmail.com,Will Johnson,Lambda class,Avengers,Thor
-Brian Wolek,Mechanical Eng.,2019,(203) 815-8362,124,Brian.wolek@gmail.com,Daniel Croitoru,Kappa class,Avengers,Beast
-William Cisneros,Bioengineering,2019,(801) 652-2810,144,wjcisneros@gmail.com,Brian Wolek,Mu class,Avengers,Havoc
-Andrew Smith,Computer Eng.,2018,(978) 884-6592,150,andrewsmiththefirst@gmail,Daniel Croitoru,Mu class,Avengers,Magneto
-Henry Poulin,Bioengineering,2019,(617) 909-8038,100001,,James Simpson,Mu class,Avengers,Colossus
-Cameron Corriveau,Mktg. / Mgmt.,2019,(603) 268-1714,151,cam.corriveau@gmail.com,Henry Poulin,Nu class,Avengers,Gambit
-Austin Roth-Eagle,Communications,2019,(443) 798-0209,157,areagle9@gmail.com,Will Lake,Nu class,Avengers,
-Kyle Dolce,Computer Science,2021,5083617001,167,Kmdolce15@gmail.com,Will Johnson,Xi Class,Avengers,
-Justin Lin,,,,170,,William Cisneros,Xi Class,Avengers,
-Max Lacoma,Mechanical Engineering/Music,2021,3472875094,175,lacomamax@gmail.com,Cameron Corriveau,Xi Class,Avengers,
-Tyler Wu,Computer Science and Business Administration,2020,9082474888,176,tyler_wu1211@yahoo.com,Austin Roth-Eagle,Xi Class,Avengers,
-Jarret Elser,Chemical Eng.,2020,(609) 802-4696,10000003,jarettelser@gmail.com,Andrew Smith,Nu class,Avengers,
-Tim Stuer,Mech. Engineering,,(978) 866-3653,timothy.stuer@gmail.com,26,,Founding Father,Greek Gods,Hephaestus
-Matt Strax-Haber,Computer Science,2012,(718) 568-9609,betathetapi@straxhaber.com,43,,Founding Father,Greek Gods,
-Cory Malinowski,Int. Business,2014,(203) 843-1540,crmal19@gmail.com,53,Matt Strax-Haber,Beta class,Greek Gods,Zeus
-Carlos Monroy,Criminal Justice,2014,(617) 595-0403,carlosmonroy92@yahoo.com,57,Tim Stuer,Beta class,Greek Gods,Apollo
-Owen Schreier,Civil Engineering,2015,(914) 588-4260,owen.schreier@gmail.com,76,Cory Malinowski,Delta class,Greek Gods,Dionysus
-David Hill,Chemistry,2014,(617) 827-1262,No Email Provided,81,Carlos Monroy,Epsilon class,Greek Gods,Aether
-Tom Viccaro,BNS,2015,(973) 617-7214,tviccaro@gmail.com,87,Owen Schreier,Zeta class,Greek Gods,Broseidon
-Charles Cormier,Health Sciences / Law,2017,(860) 966-1639,Cjcormier37@yahoo.com,103,David Hill,Theta class,Greek Gods,
-Brett Chase,Finance / Entrp.,2018,(845) 825-2340,[Email],108,Tom Viccaro,Theta class,Greek Gods,
-Brady Kielgas,Physical Therapy,2019,(937) 231-7419,bradyk13@mac.com,113,Charles Cormier,Iota class),Greek Gods,Apollo
-Michael Santry,Mechanical Eng.,2018,(203) 695-7887,santry.michael@gmail.com,127,Brady Kielgas,Kappa class,Greek Gods,
-Jay Shome,Computer Eng.,2018,(508) 915-7054,shome.jatin@gmail.com,140,Brett Chase,Mu class,Greek Gods,
-Randall Blake,BSBA and Math,2017,(908) 565-3339,randyjblake@gmail.com,143,Michael Santry,Mu class,Greek Gods,Hades
-Kevin Wasko,Cell. and Molec. Bio,2019,(516) 761-8140,kmjwasko@gmail.com,154,Jay Shome,Nu class,Greek Gods,Apollo
-Nevin Taneja,Computer Science and Math,2021,6503845733,Nevin.taneja@yahoo.com,165,Brady Kielgas,Xi Class,Greek Gods,
-Rohit Basu,Finance and Math,2018,(516) 532-3304,rohitbasu15@gmail.com,100004,Randall Blake,Nu class,Greek Gods,
-Benjamin Winslow,Industrial Engineering,2019,6038096038,Ben.wins@yahoo.com,173,Rohit Basu,Xi Class,Greek Gods,
-Alastair Abrahan,Chemical Engineering,2019,8572608567,alastairabrahan@gmail.com,174,Kevin Wasko,Xi Class,Greek Gods,
-Eugene (Neil) Fachon,Industrial Eng.,2019,(401) 391-4253,nfachon13@gmail.com,100005,Charles Cormier,Nu class,Greek Gods,
-Ben Hollander,Mech. Engineering,2013,(508) 904-8065,46,hollander.ben@gmail.com,,Founding Father,Knights,Sir Galahad
-Oleg Vaskevich,Comp. Engineering,2016,(508) 353-1505,88,oleg@osv.im,Ben Hollander,Zeta class,Knights,Sir Percival
-Sean Maloney,Political Science,2013,[No phone],24,[No email],,Founding Father,Knights,King Aruthur
-Steve Deck,Finance,2013,(256) 664-4471,68,steved34@gmail.com,Sean Maloney,Delta Class,Knights,Sir Gawain
-Joel Crozier,Chemical Eng.,2017,(567) 686-2822,93,joeldcrozier@gmail.com,Steve Deck,Zeta class,Knights,Sir Lucan
-Kyle Wolkwitz,Industrial Eng.,2017,(732) 664-2554,101,Email,Joel Crozier,Eta class,Knights,
-Sam Levine,Mechanical Eng.,2017,(617) 448-2650,123,Saml3777@gmail.com,Kyle Wolkwitz,Kappa class,Knights,
-Sean Weir,(Disaffiliated),,,10101,,Sam Levine,,Knights,
-Tyler Wong,Civil Eng.,2016,(808) 375-0309,122,ty_k_wong@hotmail.com,Joel Crozier,Kappa class,Knights,
-Michael Mendez,Media / Screen Studies,2019,(512) 736-7826,138,M.d.mendez1996@gmail.com,Tyler Wong,Lambda class,Knights,
-Kevin Goldthwaite,Physical Therapy,2014,(860) 930-2730,52,[no email],Sean Maloney,Beta class,Knights,Sir Lancelot
-Jordan Metcalf,Physical Therapy,2018,(708) 334-6782,92,s.jordi93@gmail.com,Kevin Goldthwaite,Zeta class,Knights,Sir Gareth
-Ant DeMayo,Civil Eng.,2018,(203) 615-2066,110,ademayo123@gmail.com,Jordan Metcalf,Theta class,Knights,Sir Dagonet
-Scott Louis,Physical Therapy,2020,(914) 907-7296,130,Scotttlouis@aol.com,Ant DeMayo,Lambda class,Knights,Constantine III
-Daniel Allen,Finance / Poly Sci.,2019,(978) 305-8215,141,allendanielpatrick@gmail.com,Scott Louis,Mu class,Knights,
-David Rans,Undeclared,2021,6173313599,168,Davidrans1998@gmail.com,Daniel Allen,Xi Class,Knights,
-Rayshawn Hughes,Games,2021,(862) 588-2309,166,shughes1097@gmail.com,Scott Louis,Xi Class,Knights,
-Ian Sutherland,Poly Sci. / Comm.,2017,(862) 354-7203,155,ian@sudsbox.com,Ant DeMayo,Nu class,Knights,
-Arthur Doelp,Business / Entr.,2018,(203) 803-8820,160,arthurdoelp@gmail.com,Jordan Metcalf,Nu class,Knights,
-Dave Marini,Pharmacy,2015,(321) 368-4367,69,marini.dav@gmail.com,,Delta class,Pixar,Dory
-Dave O'Sullivan,Major, Graduation Year,Phone,Beta Class Year,Email,Dave Marini,Founding Father,Pixar,
-James Marino,Economics,2017,(732) 778-1844,111,jjmarino1@gmail.com,Dave O'Sullivan,Theta class,Pixar,2pac Shakur
-Riley Taylor,Finance,2018,(508) 826-2071,133,riley.c.taylor@gmail.com,James Marino,Lambda class,Pixar,
-Alex McCalmont,Mechanical Eng.,2020,(603) 930-6770,,alexm@mcfamily.us,Riley Taylor,Nu class,Pixar,
-Harry Quinn,Political Science,2019,(917) 670-7549,152,harry.quinn.me@gmail.com,James Marino,Nu class,Pixar,
-Erik Jaklitsch,Bioengineering,2020,7187552576,169,erik.jaklitsch.4@gmail.com,Harry Quinn,Xi Class,Pixar,
-Thomas Hay,(Disaffiliated),,,35435435,,James Marino,,Pixar,
-Jonathan Vayness,Psychology,2019,(203) 240-3896,135,,Thomas Hay,Lambda class,Pixar,
-Sam Mulcahy,Theatre,2019,(314) 779-6855,16543354,Smulchman@gmail.com,Jonathan Vayness,Nu class,Pixar,
-Dan Beaulieu,Ind. Engineering,2013,(215) 850-8730,15,beaulieu.d@gmail.com,,Founding Father,Pixar,Woody
-Terry MacCormack,Political Science,2015,(781) 799-1987,78,terrencemaccormack@gmail,Dan Beaulieu,Delta class,Pixar,Marlin
-Christian DiMare,Comp. Science,2017,(508) 223-7950,90,cdimare94@gmail.com,Terry MacCormack,Zeta class,Pixar,Wheezy
-Jack Detiveaux,Poly Sci. / Economics,2018,(832) 472-8337,106,Jack.j.detiveaux@gmail.com,Christian DiMare,Theta class,Pixar,Luigi (Cars)
-Dylan Vance,Biology,2017,(973) 970-4339,149,dgv2013@live.com,Jack Detiveaux,Mu class,Pixar,
-Matt Crimmins,Psychology,2013,(732) 744-4197,17,crimmins.matthew@gmail.com,,Founding Father,Pixar,Rex
-Ben Berkowitz,(Disaffiliated),,,353543,,Matt Crimmins,,Pixar,
-Matt Eaton,Chemistry,2015,(603) 340-3942,84,matteatonvideo@gmail.com,Ben Berkowitz,Zeta class,Pixar,Buzz Lightyear
-Joaquin Surraco,Economics / Finance,2018,(973) 565-5098,115,Joaquinsurraco@hotmail.com,Matt Eaton,Iota class,Pixar,Lightning
-Trevor Holbrook,Electrical / Computer Eng.,2019,(781) 467-9339,5343,tholbrook4@gmail.com,Joaquin Surraco,Nu class,Pixar,
-Will Pett,Political Sci./History,2014,(401) 644-5282,20,[no email],,Founding Father,Pixar,Carl Fredricksen
-Joe Skoniecki,Digital Arts/Animation,2016,(978) 337-3869,85,jskoniecki@verizon.net,Will Pett,Zeta class,Pixar,WALL-E
-Kevin Charles,Accounting,2018,(443) 798-0209,546646468,areagle9@gmail.com,Joe Skoniecki,Kappa class,Pixar,
-Luis Alexandro Melendrez,Int'l Business,2019,(978) 305-8215,159,allendanielpatrick@gmail.com,Kevin Charles,Nu class,Pixar,
-Nick Bond,(Disaffilated),,,45468486,,Joe Skoniecki,,Pixar,
-Timothy Westerman,Finance / Acct.,2019,(831) 241-3420,148,westerman.timothy@gmail.com,Nick Bond,Mu class,Pixar,
-Bocar Zilla-Ba,Mechanical Eng.,2019,(617) 794-3493,163,bobo2624@gmail.com,Timothy Westerman,Nu class,Pixar,
-Dakila Mina,Industrial Engineering/Entrepreneurship,2021,9739448374,172,dakilamina@gmail.com,Timothy Westerman,Xi Class,Pixar,
-Clayton Wiggins,Ind. Engineering,2015,(425) 283-3432,50,claytonwiggins@gmail.com,,Founding Father,Pixar,Crush
-Drew Wolek,Chemical Eng.,2017,(203) 815-8360,104,Awolek@snet.net,Clayton Wiggins,Theta class,Pixar,
-Saeed Faghihi,Business,2018,(857) 250-7182,126,faghihi.s@husky.neu.edu,Drew Wolek,Kappa class,Pixar,Andy
-Matt Leis,,,,147,,Saeed Faghihi,Xi Class,Pixar,
-Matt Skolnick,International Affairs,2019,(973) 830-9124,146,,Drew Wolek,Mu class,Pixar,Doug
-Yash Shetty,Mathematics and Finance,2020/2021,6179536872,171,yash17shetty@gmail.com,Matt Skolnick,Xi Class,Pixar,
-Jared Swartz,Communications,2013,(781) 223-1310,63,swartzj1@gmail.com,,Gamma class,Legends,Muhammid Ali
-Aaron Sorin,Marketing / Finance,2014,(510) 449-8457,49,[no email],,Founding Father,Legends,Andre Agassi
-Steve Chen,Marketing / MIS,2013,(857) 222-8057,61,steven.hamlin.chen@gmail.com,Aaron Sorin,class?,Legends,Prince Harry
-Alex Fairhurst,Pharmacy,,,65464,,Aaron Sorin,class?,Legends,
-Sidd Pant,Math / BADM,2017,(857) 272-0683,116,Siddhartha.pant@hotmail.com,Alex Fairhurst,Nu class,Legends,
-Jay Dansinghani,Entpren./Mgmt.,2014,(516) 236-3979,60,jughole@hotmail.com,,Beta Class,Legends,
-Dan Artiges,Architecture,2011,(973) 896-0341,11,dan.artiges@gmail.com,,Founding Father,League of Legends,
-Steve Costa,Graphic Design,2014,(781) 333-9133,58,stephen.t.costa@gmail.com,Dan Artiges,Beta class,League of Legends,
-Pedro Gomez,Finance / Marketing,2013,(939) 389-4102,28,[no email],,Founding Father,League of Legends,
-Rodney Romero,Music,2014,(914) 943-7781,75,r.romero1103@gmail.com,Pedro Gomez,Delta class,League of Legends,
-Korbin Shuffleton,Game / Graphic Design,2013,(603) 707-1983,86,[no email],Pedro Gomez,Zeta class,League of Legends,
-Harry Horton,Criminal Justice,2014,(518) 796-4365,37,mynameisharryhorton@yahoo.com,,Founding Father,League of Legends,
-Rishabh Mallick,Finance,2013,(732) 331-5702,27,rishabh23@yahoo.com,,Founding Father,League of Legends,
-Bowen Li,Finance,2014,(908) 327-0302,73,[no email],Rishabh Mallick,Delta class,League of Legends,
-Eric Luke,Finance / Mkting,2013,(845) 304-5894,36,[no email],,Founding Father,League of Legends,
-Mo Agundo,Economics,2015,(203) 885-9645,35,agundo.mv@gmail.com,,Founding Father,League of Legends,
-Tony Zhao,Finance,2013,(978) 944-1348,48,zhao.f90@gmail.com,,Founding Father,League of Legends,
-Zach Stromer,Geology / Chem.,2014,(917) 756-1534,80,[no email],,Epsilon class,League of Legends,
-Elliot Poppel,Finance / Mktg.,2013,(518) 669-3846,10,elliot.poppel@gmail.com,,Founding Father,Leon,
-John Hubbard,Poli-Sci./Int. Affairs,2014,(512) 964-0415,22,john.russ.hubbard@gmail.com,Elliot Poppel,Founding Father,Leon,
-Nick Ginsberg,History,2014,(617) 959-6669,72,nicholasginsberg@gmail.com,John Hubbard,Delta class,Leon,
-Jake Fagen,Chem. Engineering,2016,(310) 740-6545,94,jakecfagen@gmail.com,Nick Ginsberg,Zeta Class,Leon,
-Joseph Albanese,MIS / Mgmt.,2017,(914) 260-1402,112,Joealbanese1402@gmail.com,Jake Fagen,Theta class,Leon,Mufasa
-Sahil Hundal,Business / Mktg.,2017,(925) 759-6535,03984750923457,sahil.hundal@gmail.com,Joseph Albanese,Kappa class,Leon,Lion-O
-James Pheneger,,,,6514,,Joseph Albanese,,Leon,
-Elliot Brewer,,,,65145,,John Hubbard,,Leon,
-Allem Datoo,,,,6514545,,Elliot Brewer,,Leon,
+name,degree,graduationYear,phoneNumber,roleNumber,nonHuskyEmail,big,class,family, character,image
+Phil Giordano,Architecture,2013,(631) 428-7587,34,philgiordano1@gmail.com,,Founding Father,Nintendo,Yoshi,static/profile.png
+Andrew Realmuto,Finance /Accounting,2013,(908) 313-1703,41,arealmuto@gmail.com,,Founding Father,Nintendo,Wario,static/profile.png
+Yanni Louloudis,Finance/Accounting,2013,(203) 520-4399,47,louloudis.y@gmail.com,,Alpha Class,Nintendo,Waluigi,static/profile.png
+Andrew Cutting,Marketing,2012,(703) 593-4241,65,awilcutting@gmail.com,Andrew Realmuto,Gamma class,Nintendo,Starfox,static/profile.png
+Joe Tarantino,Accounting,2013,(631) 742-3497,71,jtarantino90@gmail.com,Andrew Cutting,Delta class,Nintendo,Link,static/profile.png
+Mike Duffy,Engineering,2014,(617) 378-5222,74,duffyx7@yahoo.com,Phil Giordano,Delta class,Nintendo,Mario,static/profile.png
+Vin Trapani,Finance/Economics,2015,(631) 742-3457,82,vintrapani@gmail.com,Yanni Louloudis,Epsilon class,Nintendo,Luigi,static/profile.png
+Chris Villari,Finance/Accounting,2015,(631) 707-4470,83,cvillari14@gmail.com,Andrew Realmuto,Zeta class,Nintendo,Bowser,static/profile.png
+Phil Van Pelt,Physical Therapy,2016,(908) 868-9180,89,pvanpelt25@gmail.com,Mike Duffy,Zeta class,Nintendo,Toad,static/profile.png
+Ryan Jacobs,Finance / Mktg,2017,(201) 320-1235,95,Rtjacobs9@gmail.com,Phil Van Pelt,Eta class,Nintendo,Falco,static/profile.png
+Nicholas Salazar,Int'l Business,2018,(918) 855-4154,134,nick24or@aol.com,Ryan Jacobs,Lambda class,Nintendo,Link,static/profile.png
+Adam Bechtold,Mechanical Eng.,2019,(203) 494-8520,139,adamcbechtold@gmail.com,Ryan Jacobs,Mu class,Nintendo,,static/profile.png
+Peyton Tiroff,Computer Science,2019,(860) 918-6790,145,Tiroffp@gmail.com,Phil Van Pelt,Mu class,Nintendo,,static/profile.png
+James 'JD' Lister,Bioengineering,2019,(314) 750-6515,164,JD.lister@sbcglobal.net,Peyton Tiroff,Nu class,Nintendo,,static/profile.png
+Matt O'Brien,[Major],[year],(302) 750-5993,[Roll Number],[non-husky email],Vin Trapani,,Nintendo,[character],static/profile.png
+Joe Sincerny,Business,2012,(401) 556-5967,14,No Email,,Founding Father,Avengers,Juggarnaught,static/profile.png
+Tom Abraham,Mech. Engineering,2013,(860) 960-8600,21,thomas.mark.abraham@gmail,,Founding Father,Avengers,Iron Man,static/profile.png
+Craig Cady,Accounting,2013,(609) 516-8194,23,cmc77x@aol.com,,Founding Father,Avengers,Nightcrawler,static/profile.png
+Mark Bylancik,English,2015,(973) 985-4234,56,mbylancik@gmail.com,Tom Abraham,Beta Class,Avengers, C. America,static/profile.png
+Dan Harcourt,Music Industry,2015,(774) 280-6188,62,danieljharcourt@gmail.com,Joe Sincerny,Gamma class,Avengers,Loki,static/profile.png
+Matt Schmidt,Pharmacy,2015,(508) 450-4249,70,mjschmidt21@gmail.com,Craig Cady,Delta class,Avengers,Wolverine,static/profile.png
+Alex Chancellor,Chemistry,2015,(831) 277-0509,77,acc_tennis@yahoo.com,Mark Bylancik,Delta class,Avengers,War Machine,static/profile.png
+James Simpson,Mechanical Eng.,2017,(508) 523-2708,91,js2194@gmail.com,Matt Schmidt,Zeta class,Avengers,Ice Man,static/profile.png
+Will Johnson,Electrical / Computer Eng.,2017,(603) 762-5604,96,soccrplayr11@gmail.com,Tom Abraham,Eta class,Avengers,Hawkeye,static/profile.png
+Daniel Croitoru,Mechanical Eng.,2018,(954) 326-5934,105,croitoru.d@gmail.com,James Simpson,Theta class,Avengers,Cyclops,static/profile.png
+Will Lake,Bioengineering,2019,(925) 255-3321,121,Wlake1996@gmail.com,Will Johnson,Lambda class,Avengers,Thor,static/profile.png
+Brian Wolek,Mechanical Eng.,2019,(203) 815-8362,124,Brian.wolek@gmail.com,Daniel Croitoru,Kappa class,Avengers,Beast,static/profile.png
+William Cisneros,Bioengineering,2019,(801) 652-2810,144,wjcisneros@gmail.com,Brian Wolek,Mu class,Avengers,Havoc,static/profile.png
+Andrew Smith,Computer Eng.,2018,(978) 884-6592,150,andrewsmiththefirst@gmail,Daniel Croitoru,Mu class,Avengers,Magneto,static/profile.png
+Henry Poulin,Bioengineering,2019,(617) 909-8038,100001,,James Simpson,Mu class,Avengers,Colossus,static/profile.png
+Cameron Corriveau,Mktg. / Mgmt.,2019,(603) 268-1714,151,cam.corriveau@gmail.com,Henry Poulin,Nu class,Avengers,Gambit,static/profile.png
+Austin Roth-Eagle,Communications,2019,(443) 798-0209,157,areagle9@gmail.com,Will Lake,Nu class,Avengers,,static/profile.png
+Kyle Dolce,Computer Science,2021,5083617001,167,Kmdolce15@gmail.com,Will Johnson,Xi Class,Avengers,,static/profile.png
+Justin Lin,,,,170,,William Cisneros,Xi Class,Avengers,,static/profile.png
+Max Lacoma,Mechanical Engineering/Music,2021,3472875094,175,lacomamax@gmail.com,Cameron Corriveau,Xi Class,Avengers,,static/profile.png
+Tyler Wu,Computer Science and Business Administration,2020,9082474888,176,tyler_wu1211@yahoo.com,Austin Roth-Eagle,Xi Class,Avengers,,static/profile.png
+Jarret Elser,Chemical Eng.,2020,(609) 802-4696,10000003,jarettelser@gmail.com,Andrew Smith,Nu class,Avengers,,static/profile.png
+Tim Stuer,Mech. Engineering,,(978) 866-3653,timothy.stuer@gmail.com,26,,Founding Father,Greek Gods,Hephaestus,static/profile.png
+Matt Strax-Haber,Computer Science,2012,(718) 568-9609,betathetapi@straxhaber.com,43,,Founding Father,Greek Gods,,static/profile.png
+Cory Malinowski,Int. Business,2014,(203) 843-1540,crmal19@gmail.com,53,Matt Strax-Haber,Beta class,Greek Gods,Zeus,static/profile.png
+Carlos Monroy,Criminal Justice,2014,(617) 595-0403,carlosmonroy92@yahoo.com,57,Tim Stuer,Beta class,Greek Gods,Apollo,static/profile.png
+Owen Schreier,Civil Engineering,2015,(914) 588-4260,owen.schreier@gmail.com,76,Cory Malinowski,Delta class,Greek Gods,Dionysus,static/profile.png
+David Hill,Chemistry,2014,(617) 827-1262,No Email Provided,81,Carlos Monroy,Epsilon class,Greek Gods,Aether,static/profile.png
+Tom Viccaro,BNS,2015,(973) 617-7214,tviccaro@gmail.com,87,Owen Schreier,Zeta class,Greek Gods,Broseidon,static/profile.png
+Charles Cormier,Health Sciences / Law,2017,(860) 966-1639,Cjcormier37@yahoo.com,103,David Hill,Theta class,Greek Gods,,static/profile.png
+Brett Chase,Finance / Entrp.,2018,(845) 825-2340,[Email],108,Tom Viccaro,Theta class,Greek Gods,,static/profile.png
+Brady Kielgas,Physical Therapy,2019,(937) 231-7419,bradyk13@mac.com,113,Charles Cormier,Iota class),Greek Gods,Apollo,static/profile.png
+Michael Santry,Mechanical Eng.,2018,(203) 695-7887,santry.michael@gmail.com,127,Brady Kielgas,Kappa class,Greek Gods,,static/profile.png
+Jay Shome,Computer Eng.,2018,(508) 915-7054,shome.jatin@gmail.com,140,Brett Chase,Mu class,Greek Gods,,static/profile.png
+Randall Blake,BSBA and Math,2017,(908) 565-3339,randyjblake@gmail.com,143,Michael Santry,Mu class,Greek Gods,Hades,static/profile.png
+Kevin Wasko,Cell. and Molec. Bio,2019,(516) 761-8140,kmjwasko@gmail.com,154,Jay Shome,Nu class,Greek Gods,Apollo,static/profile.png
+Nevin Taneja,Computer Science and Math,2021,6503845733,Nevin.taneja@yahoo.com,165,Brady Kielgas,Xi Class,Greek Gods,,static/profile.png
+Rohit Basu,Finance and Math,2018,(516) 532-3304,rohitbasu15@gmail.com,100004,Randall Blake,Nu class,Greek Gods,,static/profile.png
+Benjamin Winslow,Industrial Engineering,2019,6038096038,Ben.wins@yahoo.com,173,Rohit Basu,Xi Class,Greek Gods,,static/profile.png
+Alastair Abrahan,Chemical Engineering,2019,8572608567,alastairabrahan@gmail.com,174,Kevin Wasko,Xi Class,Greek Gods,,static/profile.png
+Eugene (Neil) Fachon,Industrial Eng.,2019,(401) 391-4253,nfachon13@gmail.com,100005,Charles Cormier,Nu class,Greek Gods,,static/profile.png
+Ben Hollander,Mech. Engineering,2013,(508) 904-8065,46,hollander.ben@gmail.com,,Founding Father,Knights,Sir Galahad,static/profile.png
+Oleg Vaskevich,Comp. Engineering,2016,(508) 353-1505,88,oleg@osv.im,Ben Hollander,Zeta class,Knights,Sir Percival,static/profile.png
+Sean Maloney,Political Science,2013,[No phone],24,[No email],,Founding Father,Knights,King Aruthur,static/profile.png
+Steve Deck,Finance,2013,(256) 664-4471,68,steved34@gmail.com,Sean Maloney,Delta Class,Knights,Sir Gawain,static/profile.png
+Joel Crozier,Chemical Eng.,2017,(567) 686-2822,93,joeldcrozier@gmail.com,Steve Deck,Zeta class,Knights,Sir Lucan,static/profile.png
+Kyle Wolkwitz,Industrial Eng.,2017,(732) 664-2554,101,Email,Joel Crozier,Eta class,Knights,,static/profile.png
+Sam Levine,Mechanical Eng.,2017,(617) 448-2650,123,Saml3777@gmail.com,Kyle Wolkwitz,Kappa class,Knights,,static/profile.png
+Sean Weir,(Disaffiliated),,,10101,,Sam Levine,,Knights,,static/profile.png
+Tyler Wong,Civil Eng.,2016,(808) 375-0309,122,ty_k_wong@hotmail.com,Joel Crozier,Kappa class,Knights,,static/profile.png
+Michael Mendez,Media / Screen Studies,2019,(512) 736-7826,138,M.d.mendez1996@gmail.com,Tyler Wong,Lambda class,Knights,,static/profile.png
+Kevin Goldthwaite,Physical Therapy,2014,(860) 930-2730,52,[no email],Sean Maloney,Beta class,Knights,Sir Lancelot,static/profile.png
+Jordan Metcalf,Physical Therapy,2018,(708) 334-6782,92,s.jordi93@gmail.com,Kevin Goldthwaite,Zeta class,Knights,Sir Gareth,static/profile.png
+Ant DeMayo,Civil Eng.,2018,(203) 615-2066,110,ademayo123@gmail.com,Jordan Metcalf,Theta class,Knights,Sir Dagonet,static/profile.png
+Scott Louis,Physical Therapy,2020,(914) 907-7296,130,Scotttlouis@aol.com,Ant DeMayo,Lambda class,Knights,Constantine III,static/profile.png
+Daniel Allen,Finance / Poly Sci.,2019,(978) 305-8215,141,allendanielpatrick@gmail.com,Scott Louis,Mu class,Knights,,static/profile.png
+David Rans,Undeclared,2021,6173313599,168,Davidrans1998@gmail.com,Daniel Allen,Xi Class,Knights,,static/profile.png
+Rayshawn Hughes,Games,2021,(862) 588-2309,166,shughes1097@gmail.com,Scott Louis,Xi Class,Knights,,static/profile.png
+Ian Sutherland,Poly Sci. / Comm.,2017,(862) 354-7203,155,ian@sudsbox.com,Ant DeMayo,Nu class,Knights,,static/profile.png
+Arthur Doelp,Business / Entr.,2018,(203) 803-8820,160,arthurdoelp@gmail.com,Jordan Metcalf,Nu class,Knights,,static/profile.png
+Dave Marini,Pharmacy,2015,(321) 368-4367,69,marini.dav@gmail.com,,Delta class,Pixar,Dory,static/profile.png
+Dave O'Sullivan,Major, Graduation Year,Phone,Beta Class Year,Email,Dave Marini,Founding Father,Pixar,,static/profile.png
+James Marino,Economics,2017,(732) 778-1844,111,jjmarino1@gmail.com,Dave O'Sullivan,Theta class,Pixar,2pac Shakur,static/profile.png
+Riley Taylor,Finance,2018,(508) 826-2071,133,riley.c.taylor@gmail.com,James Marino,Lambda class,Pixar,,static/profile.png
+Alex McCalmont,Mechanical Eng.,2020,(603) 930-6770,,alexm@mcfamily.us,Riley Taylor,Nu class,Pixar,,static/profile.png
+Harry Quinn,Political Science,2019,(917) 670-7549,152,harry.quinn.me@gmail.com,James Marino,Nu class,Pixar,,static/profile.png
+Erik Jaklitsch,Bioengineering,2020,7187552576,169,erik.jaklitsch.4@gmail.com,Harry Quinn,Xi Class,Pixar,,static/profile.png
+Thomas Hay,(Disaffiliated),,,35435435,,James Marino,,Pixar,,static/profile.png
+Jonathan Vayness,Psychology,2019,(203) 240-3896,135,,Thomas Hay,Lambda class,Pixar,,static/profile.png
+Sam Mulcahy,Theatre,2019,(314) 779-6855,16543354,Smulchman@gmail.com,Jonathan Vayness,Nu class,Pixar,,static/profile.png
+Dan Beaulieu,Ind. Engineering,2013,(215) 850-8730,15,beaulieu.d@gmail.com,,Founding Father,Pixar,Woody,static/profile.png
+Terry MacCormack,Political Science,2015,(781) 799-1987,78,terrencemaccormack@gmail,Dan Beaulieu,Delta class,Pixar,Marlin,static/profile.png
+Christian DiMare,Comp. Science,2017,(508) 223-7950,90,cdimare94@gmail.com,Terry MacCormack,Zeta class,Pixar,Wheezy,static/profile.png
+Jack Detiveaux,Poly Sci. / Economics,2018,(832) 472-8337,106,Jack.j.detiveaux@gmail.com,Christian DiMare,Theta class,Pixar,Luigi (Cars),static/profile.png
+Dylan Vance,Biology,2017,(973) 970-4339,149,dgv2013@live.com,Jack Detiveaux,Mu class,Pixar,,static/profile.png
+Matt Crimmins,Psychology,2013,(732) 744-4197,17,crimmins.matthew@gmail.com,,Founding Father,Pixar,Rex,static/profile.png
+Ben Berkowitz,(Disaffiliated),,,353543,,Matt Crimmins,,Pixar,,static/profile.png
+Matt Eaton,Chemistry,2015,(603) 340-3942,84,matteatonvideo@gmail.com,Ben Berkowitz,Zeta class,Pixar,Buzz Lightyear,static/profile.png
+Joaquin Surraco,Economics / Finance,2018,(973) 565-5098,115,Joaquinsurraco@hotmail.com,Matt Eaton,Iota class,Pixar,Lightning,static/profile.png
+Trevor Holbrook,Electrical / Computer Eng.,2019,(781) 467-9339,5343,tholbrook4@gmail.com,Joaquin Surraco,Nu class,Pixar,,static/profile.png
+Will Pett,Political Sci./History,2014,(401) 644-5282,20,[no email],,Founding Father,Pixar,Carl Fredricksen,static/profile.png
+Joe Skoniecki,Digital Arts/Animation,2016,(978) 337-3869,85,jskoniecki@verizon.net,Will Pett,Zeta class,Pixar,WALL-E,static/profile.png
+Kevin Charles,Accounting,2018,(443) 798-0209,546646468,areagle9@gmail.com,Joe Skoniecki,Kappa class,Pixar,,static/profile.png
+Luis Alexandro Melendrez,Int'l Business,2019,(978) 305-8215,159,allendanielpatrick@gmail.com,Kevin Charles,Nu class,Pixar,,static/profile.png
+Nick Bond,(Disaffilated),,,45468486,,Joe Skoniecki,,Pixar,,static/profile.png
+Timothy Westerman,Finance / Acct.,2019,(831) 241-3420,148,westerman.timothy@gmail.com,Nick Bond,Mu class,Pixar,,static/profile.png
+Bocar Zilla-Ba,Mechanical Eng.,2019,(617) 794-3493,163,bobo2624@gmail.com,Timothy Westerman,Nu class,Pixar,,static/profile.png
+Dakila Mina,Industrial Engineering/Entrepreneurship,2021,9739448374,172,dakilamina@gmail.com,Timothy Westerman,Xi Class,Pixar,,static/profile.png
+Clayton Wiggins,Ind. Engineering,2015,(425) 283-3432,50,claytonwiggins@gmail.com,,Founding Father,Pixar,Crush,static/profile.png
+Drew Wolek,Chemical Eng.,2017,(203) 815-8360,104,Awolek@snet.net,Clayton Wiggins,Theta class,Pixar,,static/profile.png
+Saeed Faghihi,Business,2018,(857) 250-7182,126,faghihi.s@husky.neu.edu,Drew Wolek,Kappa class,Pixar,Andy,static/profile.png
+Matt Leis,,,,147,,Saeed Faghihi,Xi Class,Pixar,,static/profile.png
+Matt Skolnick,International Affairs,2019,(973) 830-9124,146,,Drew Wolek,Mu class,Pixar,Doug,static/profile.png
+Yash Shetty,Mathematics and Finance,2020/2021,6179536872,171,yash17shetty@gmail.com,Matt Skolnick,Xi Class,Pixar,,static/profile.png
+Jared Swartz,Communications,2013,(781) 223-1310,63,swartzj1@gmail.com,,Gamma class,Legends,Muhammid Ali,static/profile.png
+Aaron Sorin,Marketing / Finance,2014,(510) 449-8457,49,[no email],,Founding Father,Legends,Andre Agassi,static/profile.png
+Steve Chen,Marketing / MIS,2013,(857) 222-8057,61,steven.hamlin.chen@gmail.com,Aaron Sorin,class?,Legends,Prince Harry,static/profile.png
+Alex Fairhurst,Pharmacy,,,65464,,Aaron Sorin,class?,Legends,,static/profile.png
+Sidd Pant,Math / BADM,2017,(857) 272-0683,116,Siddhartha.pant@hotmail.com,Alex Fairhurst,Nu class,Legends,,static/profile.png
+Jay Dansinghani,Entpren./Mgmt.,2014,(516) 236-3979,60,jughole@hotmail.com,,Beta Class,Legends,,static/profile.png
+Dan Artiges,Architecture,2011,(973) 896-0341,11,dan.artiges@gmail.com,,Founding Father,League of Legends,,static/profile.png
+Steve Costa,Graphic Design,2014,(781) 333-9133,58,stephen.t.costa@gmail.com,Dan Artiges,Beta class,League of Legends,,static/profile.png
+Pedro Gomez,Finance / Marketing,2013,(939) 389-4102,28,[no email],,Founding Father,League of Legends,,static/profile.png
+Rodney Romero,Music,2014,(914) 943-7781,75,r.romero1103@gmail.com,Pedro Gomez,Delta class,League of Legends,,static/profile.png
+Korbin Shuffleton,Game / Graphic Design,2013,(603) 707-1983,86,[no email],Pedro Gomez,Zeta class,League of Legends,,static/profile.png
+Harry Horton,Criminal Justice,2014,(518) 796-4365,37,mynameisharryhorton@yahoo.com,,Founding Father,League of Legends,,static/profile.png
+Rishabh Mallick,Finance,2013,(732) 331-5702,27,rishabh23@yahoo.com,,Founding Father,League of Legends,,static/profile.png
+Bowen Li,Finance,2014,(908) 327-0302,73,[no email],Rishabh Mallick,Delta class,League of Legends,,static/profile.png
+Eric Luke,Finance / Mkting,2013,(845) 304-5894,36,[no email],,Founding Father,League of Legends,,static/profile.png
+Mo Agundo,Economics,2015,(203) 885-9645,35,agundo.mv@gmail.com,,Founding Father,League of Legends,,static/profile.png
+Tony Zhao,Finance,2013,(978) 944-1348,48,zhao.f90@gmail.com,,Founding Father,League of Legends,,static/profile.png
+Zach Stromer,Geology / Chem.,2014,(917) 756-1534,80,[no email],,Epsilon class,League of Legends,,static/profile.png
+Elliot Poppel,Finance / Mktg.,2013,(518) 669-3846,10,elliot.poppel@gmail.com,,Founding Father,Leon,,static/profile.png
+John Hubbard,Poli-Sci./Int. Affairs,2014,(512) 964-0415,22,john.russ.hubbard@gmail.com,Elliot Poppel,Founding Father,Leon,,static/profile.png
+Nick Ginsberg,History,2014,(617) 959-6669,72,nicholasginsberg@gmail.com,John Hubbard,Delta class,Leon,,static/profile.png
+Jake Fagen,Chem. Engineering,2016,(310) 740-6545,94,jakecfagen@gmail.com,Nick Ginsberg,Zeta Class,Leon,,static/profile.png
+Joseph Albanese,MIS / Mgmt.,2017,(914) 260-1402,112,Joealbanese1402@gmail.com,Jake Fagen,Theta class,Leon,Mufasa,static/profile.png
+Sahil Hundal,Business / Mktg.,2017,(925) 759-6535,3.98475E+12,sahil.hundal@gmail.com,Joseph Albanese,Kappa class,Leon,Lion-O,static/profile.png
+James Pheneger,,,,6514,,Joseph Albanese,,Leon,,static/profile.png
+Elliot Brewer,,,,65145,,John Hubbard,,Leon,,static/profile.png
+Allem Datoo,,,,6514545,,Elliot Brewer,,Leon,,static/profile.png
