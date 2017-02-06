@@ -147,6 +147,47 @@ function draw(){
         return d.name;
       });
 
+      nodeEnter.append("text")
+          .attr("dx", function(d) {
+              if(d.image) {
+                return -(boxWidth/2) + boxHeight + 10;
+              } else {
+                return -(boxWidth/2) + 25;
+              }
+            })
+          .attr("dy", function(d) {
+              if(d.image) {
+                return -(boxHeight/2) + 45;
+              } else {
+                return 0;
+              }
+            })
+          .attr("text-anchor", "start")
+          .attr('class', 'degree')
+          .text(function(d) {
+            return d.degree;
+          });
+      nodeEnter.append("text")
+          .attr("dx", function(d) {
+              if(d.image) {
+                return -(boxWidth/2) + boxHeight + 10;
+              } else {
+                return -(boxWidth/2) + 25;
+              }
+            })
+          .attr("dy", function(d) {
+              if(d.image) {
+                return -(boxHeight/2) + 60;
+              } else {
+                return 0;
+              }
+            })
+          .attr("text-anchor", "start")
+          .attr('class', 'degree')
+          .text(function(d) {
+            return d.graduationYear;
+          });
+
   nodeEnter.append("image")
       .attr("xlink:href", function(d) { return d.image; })
       .attr("x", -(boxWidth/2) + 1)
