@@ -28,3 +28,20 @@ svg {
   font-size: 24px;
   font-weight: 400;
 }
+
+.node {
+	cursor: pointer;
+}
+.node text {
+  font: 10px sans-serif;
+}
+
+.found {
+	fill: #ff4136;
+	stroke: #ff4136;
+}
+
+/*Just to ensure the select2 box is "glued" to the top*/
+.search {
+  width: 100%;
+}
