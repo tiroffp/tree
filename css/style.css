@@ -7,9 +7,12 @@ svg {
   border: 1px solid #aaa;
 }
 
+#found {
+  fill: #F99FC9;
+}
+
 .person rect {
-  fill: #fff;
-  stroke: steelblue;
+  fill: #ABCAE9;
   stroke-width: 1px;
 }
 
@@ -36,12 +39,15 @@ svg {
   font: 10px sans-serif;
 }
 
-.found {
-	fill: #ff4136;
-	stroke: #ff4136;
-}
-
 /*Just to ensure the select2 box is "glued" to the top*/
 .search {
   width: 100%;
+}
+
+.delicatePink {
+  stroke: #F99FC9;
+}
+
+.delicateBlue {
+  stroke: #ABCAE9;
 }

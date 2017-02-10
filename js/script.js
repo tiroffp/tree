@@ -1,25 +1,24 @@
 // from https://github.com/justincy/d3-pedigree-examples
 //https://bl.ocks.org/jjzieve/a743242f46321491a950
-$(document).ready(function() {
-  'use strict';
+$(document).ready(function(){
+  "use strict";
   var data;
-  var boxWidth = 300,
-  boxHeight = 100;
+  var boxWidth = 300, boxHeight = 100;
 
   // Setup zoom and pan
   var zoom = d3.behavior.zoom()
-  .scaleExtent([.1,1])
-  .on('zoom', function(){
+  .scaleExtent([0.2,1])
+  .on("zoom", function(){
     svg.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
   })
   // Offset so that first pan and zoom does not jump back to the origin
   .translate([150, 200]);
 
   var svg = d3.select("body").append("svg")
-  .attr('width', 1000)
-  .attr('height', 500)
+  .attr("width", 1000)
+  .attr("height", 500)
   .call(zoom)
-  .append('g')
+  .append("g")
 
   // Left padding of tree so that the whole root node is on the screen.
   // TODO: find a better way
@@ -38,15 +37,15 @@ $(document).ready(function() {
   // By returning the same value in all cases, we draw cousins
   // the same distance apart as siblings.
   .separation(function(){
-    return .5;
+    return 0.5;
   })
 
-  // Tell d3 what the child nodes are. Remember, we're drawing
+  // Tell d3 what the child nodes are. Remember, we"re drawing
   // a tree so the ancestors are child nodes.
   .children(function(person){
 
     // If the person is collapsed then tell d3
-    // that they don't have any ancestors.
+    // that they don"t have any ancestors.
     if(person.collapsed){
       return;
     } else {
@@ -57,48 +56,38 @@ $(document).ready(function() {
   var allbros = {"Wooglin":
                   {"name": "Wooglin",
                    "littles": [],
-                   "collapsed": false,
+                   "collapsed": true,
+                   "roleNumber": 0
                   }
                 }
 
   function parse(brother, index) {
+    brother.roleNumber = +brother.roleNumber
     allbros[brother.name] = brother
-    allbros[brother.name].collapsed = false
+    allbros[brother.name].collapsed = true
     var big = allbros[brother.big]
     if (big){
-      // create child array if it doesn't exist
+      // create child array if it doesn"t exist
       (big.littles || (big.littles = []))
-      // add node to parent's child array
+      // add node to parent"s child array
       .push(brother);
     } else {
       //add the brother to the root family node if it exists, or create a new family node and add the brother
       if (!allbros[brother.family]) {
-        var root = {"name":brother.family,"littles":[],"roleNumber": 10032000+index,"collapsed": false,"big":"Wooglin"}
+        var root = {"name":brother.family,"littles":[],"roleNumber": 10032000+index,"collapsed": true,"big":"Wooglin"}
         allbros["Wooglin"]["littles"].push(root)
         allbros[brother.family] = root
       }
       allbros[brother.family].littles.push(brother)
     }
   }
-  d3.csv('data/info.csv', parse, function(error, Wooglin){
+  d3.csv("data/info.csv", parse, function(error, Wooglin){
     if(error) {
       return console.error(error);
     }
     var Wooglin = allbros["Wooglin"]
 
-    Wooglin.collapsed = false
-    // Start with only the first few generations showing
-    // console.log(Wooglin)
-    // Wooglin.littles.forEach(function(gen2){
-    // console.log(gen2)
-    // gen2.littles.forEach(function(gen3){
-    // collapse(gen3);
-    // });
-    // });
-
-    data = Wooglin;
-
-    var select2_data = extract_select2_data(data,[],0)[1];//I know, not the prettiest...
+    var select2_data = extract_select2_data(Wooglin,[],0)[1];//I know, not the prettiest...
     $("#search").select2({
       data: select2_data,
       containerCssClass: "search"
@@ -109,7 +98,7 @@ $(document).ready(function() {
 
   });
 
-  function draw(){
+  function draw(selected){
     var nodes = tree.nodes(data),
     links = tree.links(nodes);
     // Update nodes
@@ -124,7 +113,7 @@ $(document).ready(function() {
     // Add any new nodes
     var nodeEnter = node.enter().append("g")
     .attr("class", "person")
-    .on('click', togglePerson);
+    .on("click", togglePerson);
 
     // Draw the rectangle person boxes
     nodeEnter.append("rect")
@@ -133,9 +122,16 @@ $(document).ready(function() {
       y: -(boxHeight/2),
       width: boxWidth,
       height: boxHeight
+    })
+    .attr("id", function(d) {
+      if (typeof selected !== "undefined") {
+        if (selected.includes(d.roleNumber)) {
+          return "found"
+        }
+      }
     });
 
-    // Draw the person's name and position it inside the box
+    // Draw the person"s name and position it inside the box
     nodeEnter.append("text")
     .attr("dx", function(d) {
       if(d.image) {
@@ -152,7 +148,7 @@ $(document).ready(function() {
       }
     })
     .attr("text-anchor", "start")
-    .attr('class', 'name')
+    .attr("class", "name")
     .text(function(d) {
       return d.name;
     });
@@ -173,7 +169,7 @@ $(document).ready(function() {
       }
     })
     .attr("text-anchor", "start")
-    .attr('class', 'degree')
+    .attr("class", "degree")
     .text(function(d) {
       return d.degree;
     });
@@ -193,7 +189,7 @@ $(document).ready(function() {
       }
     })
     .attr("text-anchor", "start")
-    .attr('class', 'degree')
+    .attr("class", "degree")
     .text(function(d) {
       return d.graduationYear;
     });
@@ -208,7 +204,7 @@ $(document).ready(function() {
     // Update the position of both old and new nodes
     node.attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
-    // Remove nodes we aren't showing anymore
+    // Remove nodes we aren"t showing anymore
     node.exit().remove();
 
     // Update links
@@ -224,7 +220,7 @@ $(document).ready(function() {
     link.enter().append("path")
     .attr("class", "link");
 
-    // Remove any links we don't need anymore
+    // Remove any links we don"t need anymore
     // if part of the tree was collapsed
     link.exit().remove();
 
@@ -233,7 +229,7 @@ $(document).ready(function() {
   }
 
   /**
-  * Update a person's state when they are clicked.
+  * Update a person"s state when they are clicked.
   */
   function togglePerson(person){
     if(person.collapsed){
@@ -247,7 +243,7 @@ $(document).ready(function() {
   /**
   * Collapse person (hide their ancestors). We recursively
   * collapse the ancestors so that when the person is
-  * expanded it will only reveal one generation. If we don't
+  * expanded it will only reveal one generation. If we don"t
   * recursively collapse the ancestors then when
   * the person is clicked on again to expand, all ancestors
   * that were previously showing will be shown again.
@@ -256,8 +252,8 @@ $(document).ready(function() {
   */
   function collapse(person){
     person.collapsed = true;
-    if(person.Little){
-      person.Little.forEach(collapse);
+    if(person.little){
+      person.little.forEach(collapse);
     }
   }
 
@@ -266,7 +262,7 @@ $(document).ready(function() {
   * Calculate start and end position of links.
   * Instead of drawing to the center of the node,
   * draw to the border of the person profile box.
-  * That way drawing order doesn't matter. In other
+  * That way drawing order doesn"t matter. In other
   * words, if we draw to the center of the node
   * then we have to draw the links first and the
   * draw the boxes on top of them.
@@ -291,8 +287,8 @@ $(document).ready(function() {
     if(obj.name === search){ //if search is found return, add the object to the path and return it
       path.push(obj);
       return path;
-    } else if(obj.littles || obj._littles){ //if littles are collapsed d3 object will have them instantiated as _littles
-      var littles = (obj.littles) ? obj.littles : obj._littles;
+    } else if(obj.littles){
+      var littles = obj.littles
       for(var i=0;i<littles.length;i++){
         path.push(obj);// we assume this path is the right one
         var found = searchTree(littles[i],search,path);
@@ -333,14 +329,12 @@ $(document).ready(function() {
   function openPaths(paths){
     for(var i =0;i<paths.length;i++){
       if(paths[i].id !== "1"){//i.e. not root
-        paths[i].class = 'found';
-        if(paths[i]._children){ //if children are hidden: open them, otherwise: don't do anything
-        paths[i].children = paths[i]._children;
-        paths[i]._children = null;
+        paths[i].class = "found";
+        if(paths[i].collapsed){ //if children are hidden: open them, otherwise: don"t do anything
+          paths[i].collapsed = false
+        }
       }
-      console.log(paths)
-      draw();
     }
+  draw(paths.map(function(x) {return x.roleNumber}));
   }
-}
 });
