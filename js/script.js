@@ -3,10 +3,11 @@
 $(document).ready(function () {
     "use strict";
     var boxWidth = 300, boxHeight = 100,
-        initScale = 0.5, initPosx = 150, initPosy=200;
+        initScale = 0.5, initPosx = 150, initPosy=200,
+        curSelectedLineage = [];
     // Setup zoom and pan
     var zoom = d3.behavior.zoom()
-            .scaleExtent([0.2, 1])
+            .scaleExtent([0.15, 1])
             .on("zoom", function () {
                 svg.attr("transform", "translate(" + d3.event.translate
                          + ") scale(" + d3.event.scale + ")");
@@ -50,8 +51,8 @@ $(document).ready(function () {
     var allbros = {"Wooglin":
                     {"name": "Wooglin",
                      "littles": [],
-                     "collapsed": true,
-                     "roleNumber": 0
+                     "collapsed": false,
+                     "display": "nope"
                     }
                   };
 
@@ -69,7 +70,7 @@ $(document).ready(function () {
                 var root = {"name": brother.family,
                             "littles": [],
                             "roleNumber": 10032000 + index, //bunk id bc all nodes need roleNumber
-                            "collapsed": true,
+                            "collapsed": false,
                             "big": "Wooglin"};
                 allbros.Wooglin.littles.push(root);
                 allbros[brother.family] = root;
@@ -102,8 +103,9 @@ $(document).ready(function () {
         draw();
     }
     //Function to render the tree
-    function draw(selected) {
-        var nodes = tree.nodes(allbros.Wooglin), links = tree.links(nodes);
+    function draw() {
+        var nodes = tree.nodes(allbros.Wooglin).filter(function (d) {return d.name !== "Wooglin"}),
+         links = tree.links(nodes).filter(function (d) {return d.source.name !== "Wooglin"});
         // Update nodes
         var node = svg.selectAll("g.person")
             // The function we are passing provides d3 with an id
@@ -114,8 +116,8 @@ $(document).ready(function () {
         // Add any new nodes
         var nodeEnter = node.enter().append("g")
             .attr("class", "person")
+            .classed("nolittles", function (d) {return typeof d.littles === "undefined"})
             .on("click", togglePerson);
-
         // Draw the rectangle person boxes
         nodeEnter.append("rect")
             .attr({
@@ -123,16 +125,6 @@ $(document).ready(function () {
                 y: -(boxHeight / 2),
                 width: boxWidth,
                 height: boxHeight
-            })
-            .attr("id", function (d) {
-                if (typeof selected !== "undefined") {
-                    console.log(selected)
-                    if (selected.includes(d.roleNumber)) {
-                        return "found";
-                    } else {
-                        return "notfound";
-                    }
-                }
             });
 
         // Draw the person"s name and position it inside the box
@@ -202,6 +194,10 @@ $(document).ready(function () {
         // Update the position of both old and new nodes
         node.attr("transform", function (d) {
             return "translate(" + d.y + "," + d.x + ")";
+        })
+        // Update visually which nodes are part of the lineage
+        .classed("found", function (d) {
+            return curSelectedLineage.includes(d.roleNumber)
         });
         // Remove nodes we aren"t showing anymore
         node.exit().remove();
@@ -234,8 +230,8 @@ $(document).ready(function () {
     */
     function collapse(person) {
         person.collapsed = true;
-        if (person.little) {
-            person.little.forEach(collapse);
+        if (person.littles) {
+            person.littles.forEach(collapse);
         }
     }
 
@@ -310,19 +306,21 @@ $(document).ready(function () {
     $("#search").on("select2-selecting", function (e) {
         var paths = searchTree(allbros.Wooglin, e.object.text,[]);
         if(paths !== "undefined"){
-            openPaths(paths);
+            openPaths(paths, e.object.text);
         } else {
             alert(e.object.text+" not found!");
         }
     })
-    function openPaths(paths){
+    function openPaths(paths, target){
         for(var i =0;i<paths.length;i++){
-            if(paths[i].id !== "1"){//i.e. not root
-                if(paths[i].collapsed){ //if children are hidden: open them, otherwise: don"t do anything
-                    paths[i].collapsed = false
-                }
+            var node = paths[i]
+            //if children are hidden: open them, otherwise: don't do anything
+            //don't expand the search target
+            if(node.collapsed && node.name != target ){
+                node.collapsed = false
             }
         }
-        draw(paths.map(function(x) {return x.roleNumber}));
+        curSelectedLineage = paths.map(function(x) {return x.roleNumber});
+        draw();
     }
 });
