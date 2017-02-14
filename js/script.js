@@ -2,15 +2,18 @@
 //https://bl.ocks.org/jjzieve/a743242f46321491a950
 $(document).ready(function () {
     "use strict";
-    var boxWidth = 300, boxHeight = 100;
+    var boxWidth = 300, boxHeight = 100,
+        initScale = 0.5, initPosx = 150, initPosy=200;
     // Setup zoom and pan
     var zoom = d3.behavior.zoom()
             .scaleExtent([0.2, 1])
             .on("zoom", function () {
-                svg.attr("transform", "translate(" + d3.event.translate + ") scale(" + d3.event.scale + ")");
+                svg.attr("transform", "translate(" + d3.event.translate
+                         + ") scale(" + d3.event.scale + ")");
             })
             // Offset so that first pan and zoom does not jump back to the origin
-            .translate([150, 200]);
+            .translate([initPosx, initPosy])
+            .scale(initScale);
 
     var svg = d3.select("body").append("svg")
             .attr("width", 1000)
@@ -19,7 +22,8 @@ $(document).ready(function () {
             .append("g")
             // Left padding of tree so that the whole root node is on the screen.
             // TODO: find a better way
-            .attr("transform", "translate(150,200)");
+            .attr("transform", "translate(" + initPosx + "," + initPosy
+                  + ") scale(" + initScale + ")");
 
     var tree = d3.layout.tree()
             // Using nodeSize we are able to control
@@ -78,7 +82,7 @@ $(document).ready(function () {
             return console.error(error);
         }
         var Wooglin = allbros.Wooglin;
-        var select2_data = extract_select2_data(Wooglin, [], 0)[1];//I know, not the prettiest...
+        var select2_data = extract_select2_data(Wooglin);
         $("#search").select2({
             data: select2_data,
             containerCssClass: "search"
@@ -196,8 +200,9 @@ $(document).ready(function () {
             .attr("height", boxHeight - 2);
 
         // Update the position of both old and new nodes
-        node.attr("transform", function (d) { return "translate(" + d.y + "," + d.x + ")"; });
-
+        node.attr("transform", function (d) {
+            return "translate(" + d.y + "," + d.x + ")";
+        });
         // Remove nodes we aren"t showing anymore
         node.exit().remove();
 
@@ -280,20 +285,30 @@ $(document).ready(function () {
     }
 
     // get the data out of selectbox (???)
-    function extract_select2_data(node,leaves,index) {
+    function processTree(node, leaves, index) {
+        //hack to only add actual brothers and not woog/family nodes
+        if (node.class) {
+            leaves.push({id:node.roleNumber,text:node.name})
+        }
         if (node.littles) {
             for (var i = 0;i<node.littles.length;i++) {
-                index = extract_select2_data(node.littles[i],leaves,index)[0];
+                index = processTree(node.littles[i],leaves,index)[0];
             }
-        } else {
-            leaves.push({id:node.roleNumber,text:node.name});
         }
-            return [index,leaves];
-        }
+        return [index, leaves]
+    }
+    function extract_select2_data(root) {
+        //call the recursive processing function
+        var result = processTree(root, [], 0)
+        //alphabetize data
+        var searchbox_entries = result[1].sort(function (a,b) {
+            return (a.text > b.text) ? 1 : ((b.text > a.text) ? -1 : 0);
+        });
+        return searchbox_entries;
+    }
     //attach search box listener
     $("#search").on("select2-selecting", function (e) {
         var paths = searchTree(allbros.Wooglin, e.object.text,[]);
-        console.log(paths)
         if(paths !== "undefined"){
             openPaths(paths);
         } else {
