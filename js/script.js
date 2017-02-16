@@ -20,6 +20,7 @@ $(document).ready(function () {
             .attr("width", 1000)
             .attr("height", 500)
             .call(zoom)
+            .on("dblclick.zoom", null)
             .append("g")
             // Left padding of tree so that the whole root node is on the screen.
             // TODO: find a better way
