@@ -3,7 +3,7 @@
 $(document).ready(function () {
     "use strict";
     var boxWidth = 300, boxHeight = 100,
-        initScale = 0.5, initPosx = 150, initPosy=200,
+        initScale = 0.5, initPosx = -100, initPosy = 250,
         curSelectedLineage = [];
     // Setup zoom and pan
     var zoom = d3.behavior.zoom()
@@ -70,7 +70,7 @@ $(document).ready(function () {
                 var root = {"name": brother.family,
                             "littles": [],
                             "roleNumber": 10032000 + index, //bunk id bc all nodes need roleNumber
-                            "collapsed": false,
+                            "collapsed": true,
                             "big": "Wooglin"};
                 allbros.Wooglin.littles.push(root);
                 allbros[brother.family] = root;
@@ -193,6 +193,9 @@ $(document).ready(function () {
             });
 
         nodeEnter.attr({
+                transform: function (d) {
+                    return "translate(" + d.parent.y + "," + d.parent.x + ")"
+                },
                 opacity: 0,
             });
 
@@ -205,7 +208,6 @@ $(document).ready(function () {
             .duration(1000)
             .attr({
                 transform: function (d) {
-                    console.log(d)
                     return "translate(" + d.y + "," + d.x + ")";
                 },
                 opacity: 1
