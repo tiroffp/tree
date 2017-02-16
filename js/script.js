@@ -125,8 +125,7 @@ $(document).ready(function () {
                 y: -(boxHeight / 2),
                 width: boxWidth,
                 height: boxHeight
-            });
-
+            })
         // Draw the person"s name and position it inside the box
         nodeEnter.append("text")
             .attr("dx", function (d) {
@@ -186,21 +185,42 @@ $(document).ready(function () {
 
         nodeEnter.append("image")
             .attr("xlink:href", function (d) { return d.image; })
-            .attr("x", -(boxWidth / 2) + 1)
-            .attr("y", -(boxHeight / 2) + 1)
-            .attr("width", boxHeight - 2)
-            .attr("height", boxHeight - 2);
+            .attr({
+                x: -(boxWidth / 2) + 1,
+                y: -(boxHeight / 2) + 1,
+                width: boxHeight - 2,
+                height: boxHeight - 2
+            });
 
-        // Update the position of both old and new nodes
-        node.attr("transform", function (d) {
-            return "translate(" + d.y + "," + d.x + ")";
-        })
-        // Update visually which nodes are part of the lineage
-        .classed("found", function (d) {
-            return curSelectedLineage.includes(d.roleNumber)
-        });
+        nodeEnter.attr({
+                opacity: 0,
+            });
+
+        // Update visually which nodes are part of the selected brothers lineage
+        node.classed("found", function (d) {
+                return curSelectedLineage.includes(d.roleNumber)
+            })
+            // Update the position of both old and new nodes
+            .transition()
+            .duration(1000)
+            .attr({
+                transform: function (d) {
+                    console.log(d)
+                    return "translate(" + d.y + "," + d.x + ")";
+                },
+                opacity: 1
+            })
         // Remove nodes we aren"t showing anymore
-        node.exit().remove();
+        node.exit()
+            .transition()
+            .duration(1000)
+            .attr({
+                transform: function (d) {
+                    return "translate(" + d.parent.y + "," + d.parent.x + ")"
+                },
+                opacity: 0
+            })
+            .remove();
 
         // Update links
         var link = svg.selectAll("path.link")
@@ -211,12 +231,26 @@ $(document).ready(function () {
             .data(links, function (d) { return d.target.roleNumber; });
         // Add new links
         link.enter().append("path")
-            .attr("class", "link");
+            .attr({
+                class: "link",
+                opacity: 0
+            });
+        // Update the links
+        link.transition()
+            .duration(1000)
+            .attr({
+                d: elbow,
+                opacity: 1
+            });
         // Remove any links we don"t need anymore
         // if part of the tree was collapsed
-        link.exit().remove();
-        // Update the links positions (old and new)
-        link.attr("d", elbow);
+        link.exit()
+            .transition()
+            .duration(1000)
+            .attr({
+                opacity: 0
+            })
+            .remove();
     }
     /**
     * Collapse person (hide their ancestors). We recursively
