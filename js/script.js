@@ -113,10 +113,6 @@ $(document).ready(function () {
          links = tree.links(nodes).filter(function (d) {return d.source.name !== "Wooglin"});
         // Update nodes
         var node = svg.selectAll("g.person")
-            // The function we are passing provides d3 with an id
-            // so that it can track when data is being added and removed.
-            // This is not necessary if the tree will only be drawn once
-            // as in the basic example.
             .data(nodes, function (person) { return person.roleNumber; });
         // Add any new nodes
         var nodeEnter = node.enter().append("g")
@@ -231,10 +227,6 @@ $(document).ready(function () {
 
         // Update links
         var link = svg.selectAll("path.link")
-            // The function we are passing provides d3 with an id
-            // so that it can track when data is being added and removed.
-            // This is not necessary if the tree will only be drawn once
-            // as in the basic example.
             .data(links, function (d) { return d.target.roleNumber; });
         // Add new links
         link.enter().append("path")
@@ -321,7 +313,7 @@ $(document).ready(function () {
         }
     }
 
-    // get the data out of selectbox (???)
+    // get the data to put in selectbox
     function processTree(node, leaves, index) {
         //hack to only add actual brothers and not woog/family nodes
         if (node.class) {
@@ -365,9 +357,10 @@ $(document).ready(function () {
         draw();
         centerOn(paths[paths.length - 1]);
     }
-    //if there is a lineage selected, center it
+    /////////////////
     //GEOMETRY NOTES:
-    //  master group tranlation point is the top right corner (transtlating to 10,10 moves top left corner to 10 10)
+    //  master group tranlation point is the top right corner
+    //      (transtlating to 10,10 moves top left corner to 10 10)
     //  node boxes coordinates are on the middle of the top boundery of the boxes
     //      node x & y are reversed to make the tree go left to right
     //
@@ -375,6 +368,7 @@ $(document).ready(function () {
     // var svgTrans = d3.transform(d3.select(".main").attr("transform")).translate
     // console.log('current box', svgTrans[0], "to", svgWidth + svgTrans[0],",",svgTrans[1] - (svgHeight/2), "to",  svgHeight +  svgTrans[1])
     /////////////////////
+    //if there is a lineage selected, center it
     function centerOn(node) {
         var y = svgHeight/2 - node.x  - (boxHeight/2),
             x = svgWidth/2 - node.y
