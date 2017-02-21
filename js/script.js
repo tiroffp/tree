@@ -2,30 +2,34 @@
 //https://bl.ocks.org/jjzieve/a743242f46321491a950
 $(document).ready(function () {
     "use strict";
-    var boxWidth = 300, boxHeight = 100,
-        initScale = 0.5, initPosx = -100, initPosy = 250,
-        curSelectedLineage = [];
+    var svgWidth = 1000, svgHeight = 500,
+        boxWidth = 400, boxHeight = 125,
+        initScale = 1, initPosx = -100, initPosy = 250,
+        curSelectedLineage = [], aniDur = 1000;
     // Setup zoom and pan
     var zoom = d3.behavior.zoom()
             .scaleExtent([0.15, 1])
             .on("zoom", function () {
-                svg.attr("transform", "translate(" + d3.event.translate
-                         + ") scale(" + d3.event.scale + ")");
+                svg.attr("transform", "translate(" + d3.event.translate + ")");
+                        //  + ") scale(" + d3.event.scale + ")");
             })
             // Offset so that first pan and zoom does not jump back to the origin
             .translate([initPosx, initPosy])
             .scale(initScale);
 
     var svg = d3.select("body").append("svg")
-            .attr("width", 1000)
-            .attr("height", 500)
+            .attr("width", svgWidth)
+            .attr("height", svgHeight)
             .call(zoom)
             .on("dblclick.zoom", null)
             .append("g")
             // Left padding of tree so that the whole root node is on the screen.
             // TODO: find a better way
-            .attr("transform", "translate(" + initPosx + "," + initPosy
-                  + ") scale(" + initScale + ")");
+            .attr({
+                transform: "translate(" + initPosx + "," + initPosy
+                            + ") scale(" + initScale + ")",
+                class: "main"
+            });
 
     var tree = d3.layout.tree()
             // Using nodeSize we are able to control
@@ -206,7 +210,7 @@ $(document).ready(function () {
             })
             // Update the position of both old and new nodes
             .transition()
-            .duration(1000)
+            .duration(aniDur)
             .attr({
                 transform: function (d) {
                     return "translate(" + d.y + "," + d.x + ")";
@@ -216,7 +220,7 @@ $(document).ready(function () {
         // Remove nodes we aren"t showing anymore
         node.exit()
             .transition()
-            .duration(1000)
+            .duration(aniDur)
             .attr({
                 transform: function (d) {
                     return "translate(" + d.parent.y + "," + d.parent.x + ")"
@@ -240,7 +244,7 @@ $(document).ready(function () {
             });
         // Update the links
         link.transition()
-            .duration(1000)
+            .duration(aniDur)
             .attr({
                 d: elbow,
                 opacity: 1
@@ -249,7 +253,7 @@ $(document).ready(function () {
         // if part of the tree was collapsed
         link.exit()
             .transition()
-            .duration(1000)
+            .duration(aniDur)
             .attr({
                 opacity: 0
             })
@@ -359,5 +363,27 @@ $(document).ready(function () {
         }
         curSelectedLineage = paths.map(function(x) {return x.roleNumber});
         draw();
+        centerOn(paths[paths.length - 1]);
+    }
+    //if there is a lineage selected, center it
+    //GEOMETRY NOTES:
+    //  master group tranlation point is the top right corner (transtlating to 10,10 moves top left corner to 10 10)
+    //  node boxes coordinates are on the middle of the top boundery of the boxes
+    //      node x & y are reversed to make the tree go left to right
+    //
+    //BREAK GLASS IN CASE OF CONFUSION:
+    // var svgTrans = d3.transform(d3.select(".main").attr("transform")).translate
+    // console.log('current box', svgTrans[0], "to", svgWidth + svgTrans[0],",",svgTrans[1] - (svgHeight/2), "to",  svgHeight +  svgTrans[1])
+    /////////////////////
+    function centerOn(node) {
+        var y = svgHeight/2 - node.x  - (boxHeight/2),
+            x = svgWidth/2 - node.y
+        svg.transition()
+            .duration(aniDur)
+            .attr({
+                transform:  "translate(" + x + "," + y + ")",
+            })
+        // set so next scroll/zoom won't jump back to svg's previous position
+        zoom.translate([x,y])
     }
 });
