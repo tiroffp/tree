@@ -1,5 +1,17 @@
 // from https://github.com/justincy/d3-pedigree-examples
 //https://bl.ocks.org/jjzieve/a743242f46321491a950
+// TODO implement selection with expanded info (popover? display below?)
+//TODO get the images for the brothers
+//TODO maybe space everybody by class w/ colored regions and labels along the top
+/*  ALPHA CLASS | BETA CLASS | GAMMA CLASS | DELTA CLASS
+*     founder-------------------little
+*     founder---------------------------------little
+*                  _-little
+*     founder-----|
+*                 --little
+*     founder-------little--------------------little
+*
+*/
 $(document).ready(function () {
     "use strict";
     var svgWidth = 1000, svgHeight = 500,
@@ -120,6 +132,7 @@ $(document).ready(function () {
             .classed("nolittles", function (d) {return typeof d.littles === "undefined"})
             .on("click", togglePerson);
         // Draw the rectangle person boxes
+        //TODO create inner box so i can use d3plus to wrapt the text
         nodeEnter.append("rect")
             .attr({
                 x: -(boxWidth / 2),
@@ -128,6 +141,7 @@ $(document).ready(function () {
                 height: boxHeight
             })
         // Draw the person"s name and position it inside the box
+        //TODO wrap the text after doing the to-do above
         nodeEnter.append("text")
             .attr("dx", function (d) {
                 if (d.image) {
@@ -375,15 +389,19 @@ $(document).ready(function () {
     /////////////////////
     //if there is a lineage selected, center it
     function centerOn(node) {
-        var scale = d3.transform(d3.select(".main").attr("transform")).scale,
-            y = svgHeight/2 - ((node.x  + (boxHeight/2)) * scale[0]),
-            x = svgWidth/2 - (node.y * scale[1])
+        var scale = d3.transform(d3.select(".main").attr("transform")).scale, x, y
+        //zoom to 0.5 if zoomed out further than that, also make scale an int not array
+        scale[0]<0.5?scale=0.5:scale=scale[0]
+        y = svgHeight/2 - ((node.x  + (boxHeight/2)) * scale),
+        x = svgWidth/2 - (node.y * scale)
+        //TODO make this a tween that does some fancy zoom in-and-out while transitioning
         svg.transition()
             .duration(aniDur)
+            .ease("cubic-in-out")
             .attr({
-                transform: "translate(" + x + "," + y + ") scale(" + scale[0] + ")"
+                transform: "translate(" + x + "," + y + ") scale(" + scale + ")"
             })
         // set so next scroll/zoom won't jump back to svg's previous position
-        zoom.scale(scale[0]).translate([x,y])
+        zoom.scale(scale).translate([x,y])
     }
 });
