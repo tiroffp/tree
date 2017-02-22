@@ -10,8 +10,8 @@ $(document).ready(function () {
     var zoom = d3.behavior.zoom()
             .scaleExtent([0.15, 1])
             .on("zoom", function () {
-                svg.attr("transform", "translate(" + d3.event.translate + ")");
-                        //  + ") scale(" + d3.event.scale + ")");
+                svg.attr("transform", "translate(" + d3.event.translate
+                         + ") scale(" + d3.event.scale + ")");
             })
             // Offset so that first pan and zoom does not jump back to the origin
             .translate([initPosx, initPosy])
@@ -363,21 +363,27 @@ $(document).ready(function () {
     //      (transtlating to 10,10 moves top left corner to 10 10)
     //  node boxes coordinates are on the middle of the top boundery of the boxes
     //      node x & y are reversed to make the tree go left to right
-    //
+    // honestly not even sure how the scaling is incorperated - probably will find a bug with it
+    //      too scared to swap the zoom tranform order (scale -> translate) to svg order (translate -> scale)
+    //      bc it appears to be working for now
     //BREAK GLASS IN CASE OF CONFUSION:
-    // var svgTrans = d3.transform(d3.select(".main").attr("transform")).translate
-    // console.log('current box', svgTrans[0], "to", svgWidth + svgTrans[0],",",svgTrans[1] - (svgHeight/2), "to",  svgHeight +  svgTrans[1])
+    // var svgTrans = d3.transform(d3.select(".main").attr("transform"))
+    // console.log('current box',
+    // -svgTrans.translate[0], "to", (svgWidth / svgTrans.scale[0]) - svgTrans.translate[0],
+    // ",",
+    // -svgTrans.translate[1] - (svgHeight/2), "to", (svgHeight / svgTrans.scale[1]) -  svgTrans.translate[1])
     /////////////////////
     //if there is a lineage selected, center it
     function centerOn(node) {
-        var y = svgHeight/2 - node.x  - (boxHeight/2),
-            x = svgWidth/2 - node.y
+        var scale = d3.transform(d3.select(".main").attr("transform")).scale,
+            y = svgHeight/2 - ((node.x  + (boxHeight/2)) * scale[0]),
+            x = svgWidth/2 - (node.y * scale[1])
         svg.transition()
             .duration(aniDur)
             .attr({
-                transform:  "translate(" + x + "," + y + ")",
+                transform: "translate(" + x + "," + y + ") scale(" + scale[0] + ")"
             })
         // set so next scroll/zoom won't jump back to svg's previous position
-        zoom.translate([x,y])
+        zoom.scale(scale[0]).translate([x,y])
     }
 });
