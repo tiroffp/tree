@@ -105,7 +105,7 @@ $(document).ready(function () {
             data: select2_data,
             containerCssClass: "search"
         });
-        draw();
+        drawTree();
 
     });
     /**
@@ -117,10 +117,10 @@ $(document).ready(function () {
         } else {
             collapse(person);
         }
-        draw();
+        drawTree();
     }
     //Function to render the tree
-    function draw() {
+    function drawTree() {
         var nodes = tree.nodes(allbros.Wooglin).filter(function (d) {return d.name !== "Wooglin"}),
          links = tree.links(nodes).filter(function (d) {return d.source.name !== "Wooglin"});
         // Update nodes
@@ -132,7 +132,6 @@ $(document).ready(function () {
             .classed("nolittles", function (d) {return typeof d.littles === "undefined"})
             .on("click", togglePerson);
         // Draw the rectangle person boxes
-        //TODO create inner box so i can use d3plus to wrapt the text
         nodeEnter.append("rect")
             .attr({
                 x: -(boxWidth / 2),
@@ -140,6 +139,15 @@ $(document).ready(function () {
                 width: boxWidth,
                 height: boxHeight
             })
+        //inner box so i can use d3plus to wrap the text within
+        nodeEnter.append("rect")
+                .attr({
+                    x: -(boxWidth / 2) + 10,
+                    y: -(boxHeight / 2) + 10,
+                    width: boxWidth - 20,
+                    height: boxHeight - 20,
+                    class: function (d) { return "inner id" + d.roleNumber}
+                })
         // Draw the person"s name and position it inside the box
         //TODO wrap the text after doing the to-do above
         nodeEnter.append("text")
@@ -156,7 +164,7 @@ $(document).ready(function () {
                 return 0;
             })
             .attr("text-anchor", "start")
-            .attr("class", "name")
+            .attr("class", function (d) { return "name id" + d.roleNumber })
             .text(function (d) {
                 return d.name;
             });
@@ -197,6 +205,9 @@ $(document).ready(function () {
             .text(function (d) {
                 return d.graduationYear;
             });
+
+        // Wrap text (honestly not sure why it seems to work for all text)
+        d3.selectAll("text").call(wrap, boxWidth);
 
         nodeEnter.append("image")
             .attr("xlink:href", function (d) { return d.image; })
@@ -368,7 +379,7 @@ $(document).ready(function () {
             }
         }
         curSelectedLineage = paths.map(function(x) {return x.roleNumber});
-        draw();
+        drawTree();
         centerOn(paths[paths.length - 1]);
     }
     /////////////////
@@ -403,5 +414,32 @@ $(document).ready(function () {
             })
         // set so next scroll/zoom won't jump back to svg's previous position
         zoom.scale(scale).translate([x,y])
+    }
+
+    //Text wrapping woo
+    function wrap(text, width) {
+        text.each(function() {
+            var text = d3.select(this),
+                words = text.text().split(/\s+/).reverse(),
+                word,
+                line = [],
+                lineNumber = 0,
+                lineHeight = 24,
+                y = text.attr("y"),
+                dy = parseFloat(text.attr("dy")),
+                tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy);
+            while (word = words.pop()) {
+                line.push(word);
+                tspan.text(line.join(" "));
+                if (tspan.node().getComputedTextLength() > width) {
+                    line.pop();
+                    tspan.text(line.join(" "));
+                    line = [word];
+                    tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", -dy).text(word);
+                }
+            }
+            // find corresponding rect and reszie
+            d3.select(this.parentNode.children[1]).attr('height', 24 * (lineNumber+1));
+        });
     }
 });
