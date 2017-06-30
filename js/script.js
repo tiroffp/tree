@@ -167,9 +167,9 @@ $(document).ready(function () {
             .attr("class", function (d) { return "name id" + d.roleNumber })
             .text(function (d) {
                 return d.name;
-            });
-
-        nodeEnter.append("text")
+            })
+            .call(wrap, boxWidth)
+            .append("text")
             .attr("dx", function (d) {
                 if (d.image) {
                     return -(boxWidth / 2) + boxHeight + 10;
@@ -187,6 +187,7 @@ $(document).ready(function () {
             .text(function (d) {
                 return d.degree;
             });
+
         nodeEnter.append("text")
             .attr("dx", function (d) {
                 if (d.image) {
@@ -207,7 +208,7 @@ $(document).ready(function () {
             });
 
         // Wrap text (honestly not sure why it seems to work for all text)
-        d3.selectAll("text").call(wrap, boxWidth);
+        // d3.selectAll("text").call(wrap, boxWidth);
 
         nodeEnter.append("image")
             .attr("xlink:href", function (d) { return d.image; })
@@ -417,29 +418,31 @@ $(document).ready(function () {
     }
 
     //Text wrapping woo
-    function wrap(text, width) {
-        text.each(function() {
-            var text = d3.select(this),
-                words = text.text().split(/\s+/).reverse(),
+    function wrap(texts, width) {
+        texts.each(function(textNode) {
+            var textNode = d3.select(this),
+                words = textNode.text().split(/\s+/).reverse(),
                 word,
                 line = [],
                 lineNumber = 0,
                 lineHeight = 24,
-                y = text.attr("y"),
-                dy = parseFloat(text.attr("dy")),
-                tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy);
+                y = textNode.y,
+                dx = parseFloat(textNode.attr("dx")),
+                dy = parseFloat(textNode.attr("dy")),
+                //null out the parent node text and append a tspan instead
+                tspan = textNode.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy);
             while (word = words.pop()) {
                 line.push(word);
                 tspan.text(line.join(" "));
-                if (tspan.node().getComputedTextLength() > width) {
+                if (tspan.node().getComputedTextLength() > (width - boxHeight - 10)) {
                     line.pop();
                     tspan.text(line.join(" "));
                     line = [word];
-                    tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", -dy).text(word);
+                    var length = tspan.node().getComputedTextLength();
+                    tspan = textNode.append("tspan").attr("y", y).attr("dy", -dy).attr("dx", -length).text(word);
                 }
             }
-            // find corresponding rect and reszie
-            d3.select(this.parentNode.children[1]).attr('height', 24 * (lineNumber+1));
+            return tspan;
         });
     }
 });
